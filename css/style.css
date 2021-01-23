@@ -1,0 +1,141 @@
+* { font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; }
+html {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;  
+}
+body { margin: 0; background-color: rgb(82, 86, 89); }
+#portada {  height: 100vh; }
+#portada img { height: 100%; }
+.player {
+  background: none;
+  width: 50px;
+  height: 50px;
+  border: solid 5px #ffffff;
+  border-radius: 100%;
+  text-indent: -9999px;
+  box-shadow: 1px 1px 3px #999999;
+  position: absolute;
+  top: calc(40% - 50px);
+  left: calc(50% - 50px)
+}
+
+.player span {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 20px solid #fff;
+  border-bottom: 15px solid transparent;
+  position:absolute;
+  top:20%;
+  left:36%;    
+}
+
+.player:hover{
+  background:#4ccaea;
+  cursor:pointer;
+  opacity:0.8;
+  border:none;
+  position:absolute;  
+  width: 60px;
+  height: 60px; 
+  box-shadow:none;
+}
+
+.player:hover span{
+  top:25%;
+  left:38%;
+}
+
+.UTV_Logo {
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  cursor: pointer;
+}
+h2 {
+  font-family: 'Parisienne', serif;
+  line-height: 60px;
+  font-size: 22px;
+  margin: 0;
+  padding: 0 50px;
+  color: #ffffff;
+}
+h2.yaSabemos, .mySlides.yaSabemos .subTitle { background-color: #3282b8; }
+h2.debemosSaber, .mySlides.debemosSaber .subTitle { background-color: forestgreen; }
+h2.nuestrosExpertos, .mySlides.nuestrosExpertos .subTitle { background-color: orange; }
+
+.mySlides {
+  background-color: #eeeeee;
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  height: calc(100vh - 128px);
+}
+.mySlides img { width: 100%; }
+.mySlides .numbertext {
+  color: #000000;
+  font-size: 12px;
+  position: absolute;
+  bottom: -36px;
+  right: 3px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 0 50%;
+  height: 24px;
+  width: 32px;
+  text-align: center;
+  line-height: 24px;
+}
+.mySlides .subTitle {
+  background-color: #3282b8;
+  color: #ffffff;
+  font-family: 'Parisienne', serif;
+  text-align: center;
+  font-size: 22px;
+}
+
+.mySlides .text {
+  padding: 8px;
+  text-align: justify;
+}
+
+.currentSlide {
+  text-align: center;
+  margin: 16px auto 0;
+}
+.dot {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.yaSabemos .active, .yaSabemos .dot:hover { background-color: #3282b8; }
+.debemosSaber .active, .debemosSaber .dot:hover { background-color: forestgreen; }
+.nuestrosExpertos .active, .nuestrosExpertos .dot:hover { background-color: orange; }
+
+.sections {
+  display: grid;
+  grid-auto-flow: column;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.sections div { 
+  height: 18px;
+  cursor: pointer;
+  border-top: 5px solid #ffffff;
+}
+.sections div.active, .sections div:hover {
+  border-top: 5px solid #cccccc;
+}
+.sections .yaSabemos { background-color: #3282b8; }
+.sections .debemosSaber { background-color: forestgreen; }
+.sections .nuestrosExpertos { background-color: orange; }
+
+.hide, .verpdf{ display: none; }

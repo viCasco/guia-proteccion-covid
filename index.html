@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guía protección COVID-19</title>
+  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="portada">
+    <img src="img/00-guia-proteccion-covid.jpg" alt="">
+    <div class="player" onclick="verpdf()"><span>Play</span></div>    
+  </div>
+
+  <img class="UTV_Logo verpdf" onclick="verportada()" src="img/UTV_Logo.png" />
+
+  <h2 class="title verpdf yaSabemos">Cosas que ya sabemos</h2>
+  <h2 class="title verpdf hide debemosSaber">Cosas que debemos saber</h2>
+  <h2 class="title verpdf hide nuestrosExpertos">Nuestros expertos recomiendan</h2>
+
+  <div class="slideshow-container verpdf">
+    <!-- Cosas que ya sabemos -->
+    <div class="mySections">
+      <div class="mySlides yaSabemos">
+        <img src="img/01-mascarilla-bien-puesta.jpg" alt="">
+        <div class="numbertext">1/4</div>
+        <div class="subTitle">Mascarilla bien puesta</div>
+        <div class="text">
+            MASCARILLA SANITARIA: No es un EPI. Retiene las gotitas que expulsamos al
+            hablar. Con ella protegemos a los demás y los demás nos protegen a nosotros.
+            Las FFP2 tienen mayor capacidad de protección pues sí son EPIs (Equipo de
+            Protección Individual)        
+        </div>
+      </div>
+      
+      <div class="mySlides hide yaSabemos">
+        <img src="img/02-mantener-la-distancia-de-seguridad.jpg" alt="">
+        <div class="numbertext">2/4</div>
+        <div class="subTitle">Mantener la distancia de seguridad</div>
+        <div class="text">
+            DISTANCIA SOCIAL: Si nos alejamos de focos infecciosos será más difícil
+            contagiarnos. Las gotas más pequeñas que producimos al hablar pueden llegar
+            más lejos, la distancia de 1,5 / 2m impiden que esas gotículas alcancen
+            nuestras mucosas.        
+        </div>
+      </div>
+      
+      <div class="mySlides hide yaSabemos">
+        <img src="img/03-manos-siempre-limpias.jpg" alt="">
+        <div class="numbertext">3/4</div>
+        <div class="subTitle">Manos siempre limpias</div>
+        <div class="text">
+            LAVADO DE MANOS Y SUPERFICIES: El jabón y el gel hidroalcohólico rompen
+            la cápsula grasa que recubre el virus destruyéndolo.        
+        </div>
+      </div>
+      
+      <div class="mySlides hide yaSabemos">
+        <img src="img/04-mi-mesa-siempre-limpia.jpg" alt="">
+        <div class="numbertext">4/4</div>
+        <div class="subTitle">Mi mesa simpre limpia</div>
+        <div class="text">
+            Manteniendo superficies y manos limpias nos aseguramos de no
+            contagiarnos a través de fómites (gotitas contenedoras del virus activo que se depositan
+            en superficies y contagian por contacto, a través de las mucosas).        
+        </div>
+      </div>
+    </div>
+    <!-- Cosas que debemos saber -->
+    <div class="mySections hide">
+      <div class="mySlides debemosSaber">
+        <img src="img/11-goticulas-y-aerosoles.jpg" alt="">
+        <div class="numbertext">1/3</div>
+        <div class="subTitle">Goticulas y aerosoles</div>
+        <div class="text">
+            CONTAGIO POR AEROSOLES: Los últimos estudios apuntan a
+            una mayor probabilidad de contagio a través de aerosoles
+            que acaban concentrándose en espacios cerrados y
+            semicerrados. Los aerosoles son como el humo,
+            pero ni se ve ni se huele.
+        </div>
+      </div>
+      <div class="mySlides debemosSaber">
+        <img src="img/12-huecos-aerosoles-sin-filtrar.jpg" alt="">
+        <div class="numbertext">2/3</div>
+        <div class="subTitle">Huecos. Aerosoles sin filtrar</div>
+        <div class="text">
+            Los aerosoles son tan pequeños que pueden salir (o entrar) fácilmente por
+            los huecos de nuestras mascarillas. Son tan minúsculos y ligeros que
+            permanecen flotando en el aire durante horas y pueden desplazarse
+            varios metros.
+        </div>
+      </div>
+      <div class="mySlides debemosSaber">
+        <img src="img/13-ventilacion-abundante-y-constante.jpg" alt="">
+        <div class="numbertext">3/3</div>
+        <div class="subTitle">Ventilación abundante y constante</div>
+        <div class="text">
+            Nuestra gran aliada es la VENTILACIÓN.
+            Abriendo ventanas y ventilando diluimos esas concentraciones de
+            aerosoles potencialmente contagiosos, minimizando riesgos.
+        </div>
+      </div>
+    </div>
+
+    <!-- Nuestros expertos recomiendan -->
+    <div class="mySections hide">
+      <div class="mySlides nuestrosExpertos">
+        <img src="img/21-que-son-los-aerosoles.jpg" alt="">
+        <div class="numbertext">1/3</div>
+        <div class="subTitle">¿Qué son los aerosoles?</div>
+        <div class="text">
+            Al respirar exhalamos fluidos respiratorios en forma de gotas,
+            gotículas y aerosoles potencialmente contagiosos,
+            también expulsamos CO2, que es un gas.
+            Los aerosoles son partículas tan pequeñas y ligeras que escapan
+            fácilmente por los huecos de nuestras mascarillas y se mantienen
+            suspendidas en el aire.
+        </div>
+      </div>
+      <div class="mySlides nuestrosExpertos">
+        <img src="img/22-cuantos-aerosoles-exhalamos.jpg" alt="">
+        <div class="numbertext">2/3</div>
+        <div class="subTitle">¿Cuántos aerosoles exhalamos?</div>
+        <div class="text">
+            Al respirar emitimos aerosoles, al hablar emitimos diez veces más y al
+            gritar o cantar hasta 50 veces más aerosoles. Estos aerosoles acaban
+            concentrándose peligrosamente en espacios cerrados o semicerrados
+            con poca ventilación.
+        </div>
+      </div>
+      <div class="mySlides nuestrosExpertos">
+        <img src="img/23-aerosoles-y-CO2.jpg" alt="">
+        <div class="numbertext">3/3</div>
+        <div class="subTitle">Aerosoles y CO2</div>
+        <div class="text">
+            Las concentraciones de CO2 y, por consiguiente, de aerosoles se
+            diluyen fácilmente con una ventilación adecuada.
+            Midiendo el nivel del CO2 podemos saber cuánta cantidad de aerosoles
+            hay en nuestro aula y en qué momento debemos renovar el aire.
+        </div>
+      </div>
+    </div>
+  
+  </div>
+    
+  <div class="currentSlide hide yaSabemos">
+    <span class="dot" onclick="currentSlide(1, 1)"></span> 
+    <span class="dot" onclick="currentSlide(2, 1)"></span> 
+    <span class="dot" onclick="currentSlide(3, 1)"></span> 
+    <span class="dot" onclick="currentSlide(4, 1)"></span> 
+  </div>
+  <div class="currentSlide hide debemosSaber">
+    <span class="dot" onclick="currentSlide(1, 2)"></span> 
+    <span class="dot" onclick="currentSlide(2, 2)"></span> 
+    <span class="dot" onclick="currentSlide(3, 2)"></span> 
+  </div>
+  <div class="currentSlide hide nuestrosExpertos">
+    <span class="dot" onclick="currentSlide(1, 3)"></span> 
+    <span class="dot" onclick="currentSlide(2, 3)"></span> 
+    <span class="dot" onclick="currentSlide(3, 3)"></span> 
+  </div>
+
+  <div class="sections verpdf">
+    <div class="currentSection yaSabemos" onclick="currentSlide(1, 1)"></div>
+    <div class="currentSection debemosSaber" onclick="currentSlide(1, 2)"></div>
+    <div class="currentSection nuestrosExpertos" onclick="currentSlide(1, 3)"></div>
+  </div>
+      
+  <script src="js/functions.js"></script>
+
+</body>
+</html>
