@@ -69,6 +69,7 @@ h2 {
 .currentSlide {
   background-color: rgb(82, 86, 89);
   text-align: center;
+  position: relative;
 }
 .dot {
   cursor: pointer;
@@ -82,6 +83,20 @@ h2 {
 }
 .active, .dot:hover {
   background-color: #717171;
+}
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  position: absolute;
+  top: 6px;
+  right: 3px;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 0 50%;
+  height: 24px;
+  width: 32px;
+  text-align: center;
+  line-height: 24px;
+  z-index: 1;
 }
 .sections {
   display: grid;

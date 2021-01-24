@@ -20,13 +20,16 @@ function crearPortada () {
 }
 
 function createDot (item) {
+  let num = item.diapositiva.length
+  let pag = `<div class="numbertext">${currentSlide}/${num}</div>`
   let dot = item.diapositiva.map(
     (e, index) => {
       let clase = (index === currentSlide - 1) ? 'dot active' : 'dot'
       return `<span class="${clase}" onclick="showDiapositiva(${index + 1}, ${currentSection})"></span>`
     }
   ).join('')
-  return dot
+  let html = dot + pag
+  return html
 }
 function createSection () {
   let section = sectionStyle.map(
@@ -55,6 +58,7 @@ function crearHtml (slide, seccion) {
       <img src="img/${slide.imagen}" alt="">
       <div class="subTitle ${clase}">${slide.sub_titulo}</div>
       <div class="currentSlide">${createDot(seccion)}</div>
+      
       <div class="sections">${createSection()}</div>
       <div class="text">${slide.texto}</div>
     </div>
